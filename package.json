@@ -11,7 +11,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "prettier": "npx prettier --write index.html"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
