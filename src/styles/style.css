@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@plugin "@iconify/tailwind4";
+/* @import "bootstrap-icons/font/bootstrap-icons.css"; */
+
+.radial-blue {
+  background: radial-gradient(lightyellow, skyblue);
+}
+
+@theme {
+  --color-papayawhip-light: #fef4e4;
+  --color-papayawhip-default: #6559d5;
+  --color-papayawhip-dark: #f56de9;
+  --animate-menu: menu-animate 0.5s ease-in-out forwards;
+  @keyframes menu-animate {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1.2);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+}
+@layer utilities {
+  .toggle-btn {
+    @apply [&>div]:rotate-[360deg] [&>div]:bg-transparent [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div::before]:translate-y-0 [&>div::before]:rotate-45;
+  }
+}
+/* @theme {
+  --animate-wiggle: wiggle 1s ease-in-out infinite alternate-reverse;
+  @keyframes wiggle {
+    0% {
+      transform: rotate(-6deg);
+    }
+  
+    100% {
+      transform: rotate(6deg);
+    }
+  }
+} */

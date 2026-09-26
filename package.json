@@ -1,0 +1,26 @@
+{
+  "name": "tailwindcss-project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@iconify-json/bi": "^1.2.7",
+    "@iconify/tailwind4": "^1.2.3",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "vite": "^8.1.4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "prettier": "npx prettier --write index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "@tailwindcss/vite": "^4.3.2",
+    "bootstrap-icons": "^1.13.1",
+    "tailwindcss": "^4.3.2"
+  }
+}
